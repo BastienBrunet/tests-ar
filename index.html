@@ -19,38 +19,21 @@
 <body>
 
   <div>
-
-    <model-viewer src="https://s3.devtools.itso.fr/itso-test/Models/3D/animatedTruck.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-      </div>
-  </model-viewer>
-
-    <model-viewer src="https://s3.devtools.itso.fr/itso-test/Models/3D/animatedTruck.glb"
-     ar 
-     ar-scale="fixed" 
-     camera-controls 
-     touch-action="pan-y" 
-     alt="A 3D model of an astronaut"  
-      xr-environment></model-viewer>
+    <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF/Avocado.gltf#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Avocado</a>
   </div>
 
   <!-- 💁 Include both scripts below to support all browsers! -->
 
-  <!-- Loads <model-viewer> for modern browsers: -->
+  <!-- Loads <model-viewer> for modern browsers: 
   <script type="module"
       src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js">
-  </script>
+  </script> -->
 
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <!-- Loads <model-viewer> for old browsers like IE11: 
   <script nomodule
       src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js">
-  </script>
+  </script> -->
+  
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 </body>
 </html>
